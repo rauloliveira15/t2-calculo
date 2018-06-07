@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1527868139 source:c:\users\rauldeoliveirasabino\desktop\t2 - calculo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcoes.h"
+
+1527868253 c:\users\rauldeoliveirasabino\desktop\t2 - calculo\funcoes.h
+	<math.h>
+
