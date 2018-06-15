@@ -7,7 +7,7 @@ double integral1(double a, double b, int k);
 double integral2(double a, double b, int k);
 double integral3(double a, double b, int k);
 double integral4(double a, double b);
-double integral5(double a, double b);
+double integral5(double a, double b, int k);
 double integral6(double a, double b);
 double integral7(double a, double b);
 double integral8(double a, double b);
@@ -124,7 +124,7 @@ double integral4(double a, double b){
     return integral;
 }
 
-double integral5(double a, double b){
+double integral5(double a, double b, int k){
     double soma=0;
     double h, integral=0;
     float v[N];
@@ -140,7 +140,7 @@ double integral5(double a, double b){
     }
     // Percorrendo o vetor completo e aplicando a função
     for (i=0;i<=N;i++){
-        v[i] = log10(v[i]);
+        v[i] = log(v[i])/log(k);
     }
     // Calculando a integral
     for(i=1;i<N;i++){
