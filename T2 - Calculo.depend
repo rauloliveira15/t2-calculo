@@ -7,3 +7,20 @@
 1527868253 c:\users\rauldeoliveirasabino\desktop\t2 - calculo\funcoes.h
 	<math.h>
 
+1529093875 source:c:\users\raul\t2-calculo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"funcoes.h"
+	"derivadas.h"
+	"zeroFuncao.h"
+
+1529065421 c:\users\raul\t2-calculo\funcoes.h
+	<math.h>
+
+1529065514 c:\users\raul\t2-calculo\derivadas.h
+	<math.h>
+
+1529093859 c:\users\raul\t2-calculo\zerofuncao.h
+	<math.h>
+

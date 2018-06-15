@@ -3,6 +3,7 @@
 #include <locale.h>
 #include "funcoes.h"
 #include "derivadas.h"
+#include "zeroFuncao.h"
 
 int main()
 {
@@ -12,6 +13,7 @@ int main()
     double d_x, d_n, d_resultado;
     double a, b;
     int k;
+    float x = 0;
 
     // menu
     while (programa != 0){
@@ -43,6 +45,7 @@ int main()
             printf("Digite a opcao: ");
             scanf("%d", &op);
 
+            // DERIVADAS
             switch (op){
                 case 1:
                     system("cls");
@@ -215,6 +218,8 @@ int main()
                     system("pause");
             } // switch
         } // while menu 1
+
+        // INTEGRAIS
         while (menu == 2){
             system("cls");
             printf("\t--INTEGRAL--\n\n");
@@ -371,6 +376,8 @@ int main()
                     system("pause");
             } // switch
         } // while menu 2
+
+        // ZERO FUNÇÃO
         while (menu == 3){
             system("cls");
             printf("\t--ZERO DA FUNCAO--\n\n");
@@ -384,17 +391,27 @@ int main()
             switch (op){
                 case 1:
                     system("cls");
-
+                    printf("\tf(x) = x^2 - 2\n\n");
+                    printf("\nDigite o valor de Xo: ");
+                    scanf("%f",&x);
+                    printf("\n Com Xo= %.2f", x);
+                    funcao1(x);
                     system("pause");
                     break;
                 case 2:
                     system("cls");
-
+                    printf("\tf(x) = 2x - cos(x)\n\n");
+                    printf("\nDigite o valor de Xo: ");
+                    scanf("%f",&x);
+                    funcao2(x);
                     system("pause");
                     break;
                 case 3:
                     system("cls");
-
+                    printf("\tf(x) = x*ln(x) - 1\n\n");
+                    printf("\nDigite o valor de Xo: ");
+                    scanf("%f",&x);
+                    funcao3(x);
                     system("pause");
                     break;
                 case 4:
