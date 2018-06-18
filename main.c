@@ -394,7 +394,6 @@ int main()
                     printf("\tf(x) = x^2 - 2\n\n");
                     printf("\nDigite o valor de Xo: ");
                     scanf("%f",&x);
-                    printf("\n Com Xo= %.2f", x);
                     funcao1(x);
                     system("pause");
                     break;
@@ -424,7 +423,7 @@ int main()
         } // while menu 3
 
         if (menu == 4) programa = 0; // fim do programa
-        if ((menu > 4) || (menu < 0)) menu = 0; // validaчуo de entrada menu principal
+        if ((menu > 4) || (menu < 0)) menu = 0; // validacao de entrada menu principal
     } // while do programa
     return 0;
 }
