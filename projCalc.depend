@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1528960604 source:c:\users\gabri\desktop\projcalc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"funcoes.h"
+	"derivadas.h"
+
+1528487500 c:\users\gabri\desktop\projcalc\funcoes.h
+	<math.h>
+
+1528559683 c:\users\gabri\desktop\projcalc\derivadas.h
+	<math.h>
+
+1529452145 source:c:\users\raul\downloads\projcalc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"funcoes.h"
+	"derivadas.h"
+	"zeroFuncao.h"
+
+1529451464 c:\users\raul\downloads\projcalc\funcoes.h
+	<math.h>
+
+1528559684 c:\users\raul\downloads\projcalc\derivadas.h
+	<math.h>
+
+1529452088 c:\users\raul\downloads\projcalc\zerofuncao.h
+	<math.h>
+

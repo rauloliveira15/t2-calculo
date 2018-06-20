@@ -155,4 +155,3 @@ double derivada10(double x){
 
             return resultado = (fxh - fx)/H;
 }
-

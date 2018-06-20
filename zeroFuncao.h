@@ -20,6 +20,7 @@ void funcao1 (float x){
         fdx =((pow((x + h),2) - 2)  - (pow(x,2)-2)) / h; // derivada da funcao.
         xn = x - (fx / fdx);
         erro = (xn - x) / xn;
+        printf("\n Com X%d %.12f", i, xn);
             if (erro<0){
                 erro = erro * (-1);
             }
@@ -44,7 +45,6 @@ void funcao2 (float x){
          // caso o resultado seja negativo, transforma em positivo.
         erro = aux / xn;
         printf("\n Com X%d %.12f", i, xn);
-        printf("\n Erro %d %.12f\n", i, erro);
            erro = (xn - x) / xn;
             if (erro<0){
                 erro = erro * (-1);
@@ -77,4 +77,5 @@ void funcao3 (float x){
             if(erro < e)break;
         }
 }
+
 
