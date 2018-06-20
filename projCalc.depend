@@ -29,3 +29,20 @@
 1529452088 c:\users\raul\downloads\projcalc\zerofuncao.h
 	<math.h>
 
+1529510748 source:c:\users\gabri\desktop\t2-calculo-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"funcoes.h"
+	"derivadas.h"
+	"zeroFuncao.h"
+
+1529442914 c:\users\gabri\desktop\t2-calculo-master\funcoes.h
+	<math.h>
+
+1529510614 c:\users\gabri\desktop\t2-calculo-master\derivadas.h
+	<math.h>
+
+1529442914 c:\users\gabri\desktop\t2-calculo-master\zerofuncao.h
+	<math.h>
+

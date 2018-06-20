@@ -24,7 +24,7 @@ void funcao1 (float x){
             if (erro<0){
                 erro = erro * (-1);
             }
-        printf("\n Erro %d %.12lf\n", i, erro);
+        printf("\n Erro %d %.12lf\n\n", i, erro);
             x = xn;
             if(erro < e)break;
         }
@@ -49,7 +49,7 @@ void funcao2 (float x){
             if (erro<0){
                 erro = erro * (-1);
             }
-        printf("\n Erro %d %.12lf\n", i, erro);
+        printf("\n Erro %d %.12lf\n\n", i, erro);
             x = xn;
             if(erro < e)break;
         }
@@ -72,7 +72,7 @@ void funcao3 (float x){
             if (erro<0){
                 erro = erro * (-1);
             }
-        printf("\n Erro %d %.12lf\n", i, erro);
+        printf("\n Erro %d %.12lf\n\n", i, erro);
             x = xn;
             if(erro < e)break;
         }

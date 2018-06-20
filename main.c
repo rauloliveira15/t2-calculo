@@ -20,6 +20,10 @@ char inte[10];
 char inte2[10];
 char inte3[10];
 
+char z_x[10];
+
+
+
 
 int main()
 {
@@ -64,7 +68,7 @@ int main()
 
                         if((aux == -1)||(aux2 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -97,7 +101,7 @@ int main()
 
                         if((aux == -1)||(aux2 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -129,7 +133,8 @@ int main()
 
                         if(aux == -1){
 
-                            printf("\n\nDigite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
 
                         }else if(aux == 1){
 
@@ -149,24 +154,34 @@ int main()
                     system("cls");
                         printf("-- log(k)(x) --\n\n");
 
-                       printf("Digite o valor de X: ");
+                        printf("Digite o valor de X: ");
                         gets(d);
 
                         aux = validaEntrada(d);
 
-                        if(aux == -1){
+                        printf("\nDigite o valor de K: ");
+                        gets(d2);
 
-                            printf("\n\nDigite aqui apenas Números (0 a 9)");
+                        aux2 = validaEntrada(d2);
 
-                        }else if(aux == 1){
+                        if((aux == -1)||(aux2 == -1)){
+
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
+
+                        }else if((aux == 1)&&(aux2 == 1)){
 
                             d_x =  atof(d);
 
-                             d_resultado = derivada4(d_x);
+                            d_n = atof(d2);
 
-                            printf("\n\nA derivada numerica de log(k)(x) eh igual a: %.9f\n\n ",d_resultado);
+                            d_resultado = derivada4(d_x, d_n);
+
+                            printf("\n\nA derivada numerica de log(k)(x) eh igual a: %.9f \n\n",d_resultado);
                             system("pause");
+
                         }
+
                     d_resultado = 0;
                     break;
                 case 6:
@@ -180,7 +195,8 @@ int main()
 
                         if(aux == -1){
 
-                            printf("\n\nDigite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
 
                         }else if(aux == 1){
 
@@ -204,7 +220,8 @@ int main()
 
                         if(aux == -1){
 
-                            printf("\n\nDigite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
 
                         }else if(aux == 1){
 
@@ -228,7 +245,8 @@ int main()
 
                         if(aux == -1){
 
-                            printf("\n\nDigite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
 
                         }else if(aux == 1){
 
@@ -252,7 +270,8 @@ int main()
 
                         if(aux == -1){
 
-                            printf("\n\nDigite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
 
                         }else if(aux == 1){
 
@@ -276,7 +295,8 @@ int main()
 
                         if(aux == -1){
 
-                            printf("\n\nDigite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
 
                         }else if(aux == 1){
 
@@ -305,7 +325,8 @@ int main()
 
                         if(aux == -1){
 
-                            printf("\n\nDigite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
 
                         }else if(aux == 1){
 
@@ -354,7 +375,7 @@ int main()
 
                     if((aux == -1)||(aux2 == -1)||(aux3 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)&&(aux3 == 1)){
@@ -367,7 +388,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral1(a,b,k));
+                            printf("\n\nIntegral = %.9f\n\n", integral1(a,b,k));
                             system("pause");
 
                         }
@@ -390,8 +411,7 @@ int main()
                     aux3=validaEntrada(inte3);
 
                     if((aux == -1)||(aux2 == -1)||(aux3 == -1)){
-
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)&&(aux3 == 1)){
@@ -404,7 +424,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral2(a,b,k));
+                            printf("\n\nIntegral = %.9f\n\n", integral2(a,b,k));
                             system("pause");
 
                         }
@@ -428,7 +448,7 @@ int main()
 
                     if((aux == -1)||(aux2 == -1)||(aux3 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)&&(aux3 == 1)){
@@ -441,7 +461,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral3(a,b,k));
+                            printf("\n\nIntegral = %.9f\n\n", integral3(a,b,k));
                             system("pause");
 
                         }
@@ -464,7 +484,7 @@ int main()
 
                         if((aux == -1)||(aux2 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -475,7 +495,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral4(a,b));
+                            printf("\n\nIntegral = %.9f\n\n", integral4(a,b));
                             system("pause");
 
                         }
@@ -500,7 +520,7 @@ int main()
 
                         if((aux == -1)||(aux2 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)&&(aux3 == 1)){
@@ -513,7 +533,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral5(a,b,k));
+                            printf("\n\nIntegral = %.9f\n\n", integral5(a,b,k));
                             system("pause");
 
                         }
@@ -535,7 +555,7 @@ int main()
 
                         if((aux == -1)||(aux2 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -546,7 +566,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral6(a,b));
+                            printf("\n\nIntegral = %.9f\n\n", integral6(a,b));
                             system("pause");
 
                         }
@@ -566,8 +586,7 @@ int main()
                         aux2 = validaEntrada(d2);
 
                         if((aux == -1)||(aux2 == -1)){
-
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -578,7 +597,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral7(a,b));
+                            printf("\n\nIntegral = %.9f\n\n", integral7(a,b));
                             system("pause");
 
                         }
@@ -600,7 +619,7 @@ int main()
 
                         if((aux == -1)||(aux2 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -611,7 +630,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral8(a,b));
+                            printf("\n\nIntegral = %.9f\n\n", integral8(a,b));
                             system("pause");
 
                         }
@@ -631,8 +650,7 @@ int main()
                         aux2 = validaEntrada(d2);
 
                         if((aux == -1)||(aux2 == -1)){
-
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -643,7 +661,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral9(a,b));
+                            printf("\n\nIntegral = %.9f\n\n", integral9(a,b));
                             system("pause");
 
                         }
@@ -664,7 +682,7 @@ int main()
 
                         if((aux == -1)||(aux2 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -675,7 +693,7 @@ int main()
 
 
 
-                            printf("\n\nIntegral = %.4f\n\n", integral10(a,b));
+                            printf("\n\nIntegral = %.9f\n\n", integral10(a,b));
                             system("pause");
 
                         }
@@ -696,7 +714,7 @@ int main()
 
                         if((aux == -1)||(aux2 == -1)){
 
-                            printf("Digite aqui apenas Números (0 a 9)");
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
                             system("pause");
 
                         }else if((aux == 1)&&(aux2 == 1)){
@@ -705,7 +723,7 @@ int main()
 
                             b = atof(inte2);
 
-                            printf("\n\nIntegral = %.4f\n\n", integral11(a,b));
+                            printf("\n\nIntegral = %.9f\n\n", integral11(a,b));
                             system("pause");
 
                         }
@@ -726,26 +744,73 @@ int main()
                 case 1:
                     system("cls");
                     printf("\tf(x) = x^2 - 2\n\n");
-                    printf("\nDigite o valor de Xo: ");
-                    scanf("%f",&x);
-                    funcao1(x);
-                    system("pause");
+
+                        printf("Digite o valor de X: ");
+                        gets(z_x);
+
+                        aux = validaEntrada(z_x);
+
+                        if(aux == -1){
+
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
+                        }else if(aux == 1){
+
+                            x =  atof(z_x);
+
+
+                            funcao1(x);
+
+
+                            system("pause");
+                        }
                     break;
                 case 2:
                     system("cls");
                     printf("\tf(x) = 2x - cos(x)\n\n");
-                    printf("\nDigite o valor de Xo: ");
-                    scanf("%f",&x);
-                    funcao2(x);
-                    system("pause");
+
+                        printf("Digite o valor de X: ");
+                        gets(z_x);
+
+                        aux = validaEntrada(z_x);
+
+                        if(aux == -1){
+
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
+                        }else if(aux == 1){
+
+                            x =  atof(z_x);
+
+
+                            funcao2(x);
+
+
+                            system("pause");
+                        }
                     break;
                 case 3:
                     system("cls");
                     printf("\tf(x) = x*ln(x) - 1\n\n");
-                    printf("\nDigite o valor de Xo: ");
-                    scanf("%f",&x);
-                    funcao3(x);
-                    system("pause");
+                        printf("Digite o valor de X: ");
+                        gets(z_x);
+
+                        aux = validaEntrada(z_x);
+
+                        if(aux == -1){
+
+                            printf("\n\nDigite aqui apenas Numeros (0 a 9)\n\n");
+                            system("pause");
+                        }else if(aux == 1){
+
+                            x =  atof(z_x);
+
+
+                            funcao3(x);
+
+
+                            system("pause");
+                        }
                     break;
                 case 4:
                     menu = 0;

@@ -1,9 +1,17 @@
 #include <math.h>
- double H = 0.0000000001;
+double H = 0.0000000001;
 
- double derivada_K(double k);
- double derivada1(double x, double n);
- double derivada2(double x, double n);
+double derivada_K(double k);
+double derivada1(double x, double n);
+double derivada2(double x, double n);
+double derivada3(double x);
+double derivada4(double x, double n);
+double derivada5(double x);
+double derivada6(double x);
+double derivada7(double x);
+double derivada8(double x);
+double derivada9(double x);
+double derivada10(double x);
 
 
 double derivada_K(double k){
@@ -65,15 +73,15 @@ double derivada3(double x){
 
 }
 
-double derivada4(double x){
+double derivada4(double x, double n){
 
             double resultado;
             double fx;
             double fxh;
 
-            fx = log10(x);
+            fx = log(x)/log(n);
 
-            fxh = log10(x+H);
+            fxh = log(x+H)/log(n);
 
             return resultado = (fxh - fx)/H;
 }
