@@ -46,3 +46,20 @@
 1529442914 c:\users\gabri\desktop\t2-calculo-master\zerofuncao.h
 	<math.h>
 
+1529669538 source:c:\users\raul\t2-calculo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"funcoes.h"
+	"derivadas.h"
+	"zeroFuncao.h"
+
+1529669538 c:\users\raul\t2-calculo\funcoes.h
+	<math.h>
+
+1529669538 c:\users\raul\t2-calculo\derivadas.h
+	<math.h>
+
+1529669641 c:\users\raul\t2-calculo\zerofuncao.h
+	<math.h>
+
